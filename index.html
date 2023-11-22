@@ -1,0 +1,231 @@
+<!-- The above code is an HTML document that creates a travel guide website. It includes a header with a
+navigation menu, a section for discovering destinations and searching for trips, a section for
+special tour package offers, a section for destination information, and a footer with a subscription
+form and some statistics. The code also includes CSS stylesheets and a JavaScript file. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="TE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="media.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <title>Travel Guide</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h4>Travel Guide</h4>
+                <ul id="menu_bx">
+                    <li><a href="#discover">Discover</a></li>
+                    <li><a href="#discount">Special Deals</a></li>
+                    <li><a href="#destiny">Destination</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><button type=button id="toggleButton" >Dark Mode</button></li>
+                </ul>
+                <i class="bi bi-three-dots"></i>
+            </nav>
+            <div class="content" id="discover">
+                <div class="cont_box">
+                    <h1>The right destination for you and your family</h1>
+                    <p>Creative taglines have the capability of capturing attention of potential customer</p>
+                    <button>Start Your Search</button>
+                </div>
+                <div class="trip_box">
+                    <div class="search_box">
+                        <div class="card">
+                            <h4>Location <i class="bi bi-caret-down-fill"></i></h4>
+                            <input type="text" placeholder="Enter destination">
+                        </div>
+                        <div class="card">
+                            <h4>Date <i class="bi bi-caret-down-fill"></i></h4>
+                            <input type="date" class="da">
+                        </div>
+                        <div class="card">
+                            <h4>People <i class="bi bi-caret-down-fill"></i></h4>
+                            <input type="number" placeholder="Number of people">
+                        </div>
+                        <input type="button" value="Explore Now">
+                    </div>
+                    <div class="travel_box">
+                        <h4>Places To Visit</h4>
+                        <div class="cards">
+                            <div class="card">
+                                <h3>India <img src="icon/india.png" alt=""></h3>
+                                <img src="img/Mumbai-India-at-night.jpg" alt="">
+                                <div class="btn_city">
+                                    <a href="">Read Now</a>
+                                    <h5>Mumbai Central <br> <span>$460</span></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>United-States <img src="icon/united-states.png" alt=""></h3>
+                                <img src="img/newyork.webp" alt="">
+                                <div class="btn_city">
+                                    <a href="">Read Now</a>
+                                    <h5>NewYork <br> <span>$870</span></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Russia <img src="icon/russia.png" alt=""></h3>
+                                <img src="img/sanpitersburg.jpg" alt="">
+                                <div class="btn_city">
+                                    <a href="">Read Now</a>
+                                    <h5>Sanpitersburg <br> <span>$640</span></h5>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Spain <img src="icon/spain.png" alt=""></h3>
+                                <img src="img/barcelona.jpg" alt="">
+                                <div class="btn_city">
+                                    <a href="">Read Now</a>
+                                    <h5>Barcelona <br> <span>$730</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="offers" id="discount">
+            <h1>Best tour package offers for you</h1>
+            <p>Choose your next destination</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Lotus-Delhi</h3>
+                    <div class="img_text">
+                        <img src="img/lotus_temple.jpg" alt="">
+                        <h4>Included Air ticket, Hotel, Breakfast, Tour, Airport Transport</h4>
+                    </div>
+                    <div class="cont_bx">
+                        <div class="price">
+                            <div class="heart-chat">
+                                <i class="bi bi-heart-fill"><span> 18917</span></i>
+                                <i class="bi bi-chat-fill"><span> 346</span></i>
+                            </div>
+                            <div class="info_price">
+                                <a href="">More info</a>
+                                <h4>$2546</h4>
+                            </div>
+                        </div>
+                        <div class="days">5 Days<br> India</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Burj khalifa-DXB</h3>
+                    <div class="img_text">
+                        <img src="img/burjkhlifa.jpg" alt="">
+                        <h4>Included Air ticket, Hotel, Breakfast, Tour, Airport Transport</h4>
+                    </div>
+                    <div class="cont_bx">
+                        <div class="price">
+                            <div class="heart-chat">
+                                <i class="bi bi-heart-fill"><span> 18917</span></i>
+                                <i class="bi bi-chat-fill"><span> 346</span></i>
+                            </div>
+                            <div class="info_price">
+                                <a href="">More info</a>
+                                <h4>$2546</h4>
+                            </div>
+                        </div>
+                        <div class="days">5 Days<br> Dubai</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Piramids-Egypt</h3>
+                    <div class="img_text">
+                        <img src="img/piramids.jpg" alt="">
+                        <h4>Included Air ticket, Hotel, Breakfast, Tour, Airport Transport</h4>
+                    </div>
+                    <div class="cont_bx">
+                        <div class="price">
+                            <div class="heart-chat">
+                                <i class="bi bi-heart-fill"><span> 18917</span></i>
+                                <i class="bi bi-chat-fill"><span> 346</span></i>
+                            </div>
+                            <div class="info_price">
+                                <a href="">More info</a>
+                                <h4>$2546</h4>
+                            </div>
+                        </div>
+                        <div class="days">5 Days<br> Egypt</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Mountains-Vietnam</h3>
+                    <div class="img_text">
+                        <img src="img/lotus_temple.jpg" alt="">
+                        <h4>Included Air ticket, Hotel, Breakfast, Tour, Airport Transport</h4>
+                    </div>
+                    <div class="cont_bx">
+                        <div class="price">
+                            <div class="heart-chat">
+                                <i class="bi bi-heart-fill"><span> 18917</span></i>
+                                <i class="bi bi-chat-fill"><span> 346</span></i>
+                            </div>
+                            <div class="info_price">
+                                <a href="">More info</a>
+                                <h4>$2546</h4>
+                            </div>
+                        </div>
+                        <div class="days">5 Days<br> Viet</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="destination" id="destiny">
+            <div class="des_bx">
+                <h4>Our Destination</h4>
+                <p>Choose your next destination</p>
+                <li>India</li>
+                <li>Dubai</li>
+                <li>USA</li>
+                <li>Vietnam</li>
+                <li>Russia</li>
+                <h6>Included: Air ticket, hotel, breakfast, fruits, airport transport</h6>
+                <button>More Info</button>
+            </div>
+            <div class="img_bx">
+                <img src="img/Main_plan.png" alt="">
+                <div class="msg">
+                    <img src="icon/india.png" alt="">
+                    <div class="cont">
+                        <h4>India</h4>
+                        <div class="icon">
+                            <i class="bi bi-heart-fill"><span> 18917</span></i>
+                            <i class="bi bi-chat-fill"><span> 346</span></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="msg">
+                    <img src="icon/united-states.png" alt="">
+                    <div class="cont">
+                        <h4>United-States</h4>
+                        <div class="icon">
+                            <i class="bi bi-heart-fill"><span> 18917</span></i>
+                            <i class="bi bi-chat-fill"><span> 346</span></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="about">
+            <h2>Subscribe & <br> Get special discount</h2>
+            <P>Explore your dreams and wishes</P>
+            <div class="input">
+                <input type="text" placeholder="Enter your email address">
+                <button>Subscribe</button>
+            </div>
+            <ul>
+                <li>7823 <br> <h6>Years Serving the travel Industry</h6></li>
+                <li>4323 <br> <h6>Global <br> Partnership </h6></li>
+                <li>2343 <br> <h6>Subscribe </h6></li>
+            </ul>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
